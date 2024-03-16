@@ -1,0 +1,46 @@
+@media screen and (max-width: 875px) {
+  .share {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    justify-content: start;
+  }
+  .share::after {
+    content: none;
+  }
+  main section > div > img:last-of-type {
+    z-index: 2;
+  }
+  .click {
+    padding: 15px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 595px) {
+  main {
+    width: 412px;
+    height: 90%;
+    flex-direction: column;
+  }
+  main .img {
+    width: 100%;
+    height: 50%;
+  }
+  main section {
+    width: 100%;
+    padding-bottom: 0;
+  }
+  main section > div {
+    height: 10%;
+  }
+  .share {
+    top: -50%;
+    left: -5%;
+    height: 200%;
+  }
+  .click {
+    width: 110%;
+  }
+}
